@@ -38,15 +38,19 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
-/*Contacto*/
 
-section.formcontato{
-
-}
 
 /*footeer*/
 
-section.footer{
+.footer__rodape{
+    ont-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 32px;
+
    
 }
 
