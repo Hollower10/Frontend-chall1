@@ -1,0 +1,29 @@
+/* Experiencia Académica*/
+
+.academic{
+    background: #EAF2FD;
+}
+.academic__title{
+    font-size:32px;
+    padding:2rem;
+    margin-top:3rem;
+    text-align: center;
+}
+.academic__courses{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 7rem;
+    margin-right: 9.5rem;
+    height: 320px;
+}
+.academic__courses__item__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 250px;
+    height: 150px;
+    background: #FFFFFF;
+}

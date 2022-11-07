@@ -1,0 +1,26 @@
+/*Sección Menu*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-left: 9.5rem;
+    margin-right: 9.5rem;
+    padding-top: 1rem;
+}
+
+.menu__header { 
+    display: flex; 
+    
+}
+.menu__header img{ 
+    height: 16px;
+    margin-top:18px;
+    padding-right: 1rem;
+}
+.menu__list{
+    display: flex;
+    width: 653px;
+    flex-direction: row;
+    justify-content:space-between;
+}

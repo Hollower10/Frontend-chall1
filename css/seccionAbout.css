@@ -1,0 +1,17 @@
+/*Sección About*/
+
+.about{
+    background: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 64px;
+    gap: 10px;
+
+}
+.about__container{
+    justify-content:center;
+    margin-left: 5.4rem;
+    margin-right: 26rem;
+}

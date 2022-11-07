@@ -1,0 +1,53 @@
+/* experiencia*/
+.experience img{
+    padding: 1rem 1rem 1rem 1rem;
+}
+.experience__botao--demo{
+    background: #2A7AE4;
+    border: none;
+    width: 80px;
+    height: 31px;
+    color: #FFFFFF;
+}
+.experiencia__botao--repo{
+    color: #2A7AE4;
+    border-color:  #2A7AE4;
+    width: 80px;
+    height: 31px;
+
+}
+.experiencie__box{
+    margin-left: 9.5rem;
+    margin-right:9rem;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+   
+
+}
+.experiencie__box2{
+    margin-left: 9.5rem;
+    margin-right:9rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+}
+.experience__box3{
+    margin-left: 9.5rem;
+    margin-right:9rem;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.experience__box4{
+    margin-left: 9.5rem;
+    margin-right:9rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    
+}
+.experience__section__title{
+    text-align: center;
+}
+
