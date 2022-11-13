@@ -1,12 +1,11 @@
-const formulario= document.querySelector("formcontato__form");
-formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
 
-});
+
+
 document.getElementById("text1").addEventListener("keyup", Habilitar);
 document.getElementById("text2").addEventListener("keyup", Habilitar);
 document.getElementById("text3").addEventListener("keyup", Habilitar);
 document.getElementById("text4").addEventListener("keyup", Habilitar);
+
 
 function Habilitar(){
     T1= document.getElementById("text1").value;
@@ -15,25 +14,25 @@ function Habilitar(){
     T4= document.getElementById("text4").value;
     val =0;
 
-    if(text1==""){
+    if(T1==""){
         val++;
     }
-    if(text2==""){
+    if(T2==""){
         val++;
     }
-    if(text3==""){
+    if(T3==""){
         val++;
     }
-    if(text4==""){
+    if(T4==""){
         val++;
     }
     if(val==0){
         document.getElementById("btn").disabled= false;
+     
         
     }else{
         document.getElementById("btn").disabled= true;
-        
-       
     }
-    
 }
+const formulario= document.getElementById("btn");
+formulario.addEventListener("click", swal("Good job!", "You are register", "success"));
