@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/seccionAcad.css">
     <link rel="stylesheet" href="./css/seccionExperience.css">
     <link rel="stylesheet" href="./css/seccionContacto.css">
+    <link rel="stylesheet" href="./css/seccionFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
@@ -35,7 +36,7 @@
                 <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
                 <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                 <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto"><b>spectrummago@hotmail.com</b></a></li>
+                <li class="menu__list__item" id="contact"><a href="#contacto"><b>spectrummago@hotmail.com</b></a></li>
             </ul>
         </nav>
     </section>
@@ -244,14 +245,14 @@
         <div class="experience__box4">
             <img class="experience__img" src="assets\forca2_print.png">
             <div class="experience__info-container"
-            <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
+                <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://hollower10.github.io/AhorcadoAlura/index.html"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                        <span class="experience__repo"><a href="https://hollower10.github.io/AhorcadoAlura/index.html"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                        <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
-        </div>
+            </div>
         </div>  
 
         <!-- Sección de Contacto -->
@@ -265,11 +266,12 @@
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                     <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <input id="text1" class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required maxlength="50">
+                        <input id="text2" class="formcontato__input" type="email" name="email" placeholder="E-mail" required pattern=[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}>
+                        <input id="text3" class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required maxlength="50">
+                        <textarea id="text4" class="formcontato__textarea formcontato__input" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" required maxlength="300"></textarea>
+                        <p class="ADV">&#x26a0 Completa todos los campos</p>
+                        <button type="submit" id="btn" class="formcontato__botao" >Enviar mensaje</button>
                     </form>
                 </div>
             </div>
@@ -278,12 +280,13 @@
         <!-- Sección de Footer -->
         <section class="footer">
             <div class="footer__rodape">
-                <p>Desarrollado por Fulana de Tal</p>
+                <p>Desarrollado por Diego Prada</p>
                 <p>2022</p>
             </div>
         </section>
     </div>
  <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+<script src="EnabledButton.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
