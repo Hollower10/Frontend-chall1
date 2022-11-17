@@ -2,7 +2,6 @@
 
 .menu{
     display: flex;
-    flex-direction: row;
     justify-content: space-between; 
     margin-left: 9.5rem;
     margin-right: 9.5rem;
@@ -21,6 +20,6 @@
 .menu__list{
     display: flex;
     width: 653px;
-    flex-direction: row;
+    
     justify-content:space-between;
 }

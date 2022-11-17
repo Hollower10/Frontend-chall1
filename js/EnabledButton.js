@@ -1,6 +1,5 @@
 
 
-
 document.getElementById("text1").addEventListener("keyup", Habilitar);
 document.getElementById("text2").addEventListener("keyup", Habilitar);
 document.getElementById("text3").addEventListener("keyup", Habilitar);
@@ -34,5 +33,11 @@ function Habilitar(){
         document.getElementById("btn").disabled= true;
     }
 }
+const form= document.querySelector("formcontato__form");
+
+
 const formulario= document.getElementById("btn");
-formulario.addEventListener("click", swal("Good job!", "You are register", "success"));
+formulario.addEventListener("submit", (e)=>{
+    e.target=swal("Good job!", "You are register", "success");
+
+});
